@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KennethOnTheNet</title>
+    </head>
+    <body style = "background-color: #eeeed2;">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/projects.html">My Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Little Man Computer
+        </h1>
+        <p>
+            A little man computer is a simplified model of a <a href="https://en.wikipedia.org/wiki/Little_man_computer" target="_blank">Neumann architecture computer</a> used to teach students about assembly how the machines 
+            we're using all the time actually work. I was introduced to it as a part of my CS A-Levels, and after mucking around in <a href="https://peterhigginson.co.uk/lmc/" target="_blank">Peter Higginson's verison</a> I 
+            decided to takea shot at making my own. 
+        </p>
+        <p>
+            The code in this project is "evil". I would not code in this way in a regular project, however, for this project I was aiming to really grasp how data is moved and managed by the CPU, therefore, the code rarely
+            passes arguments to functions and instead there's an awful lot of moving data from registers. For example, to read the RAM, instead of calling a function that takes in the position in RAM and returns the value stored
+            there, the MAR (Memory Address Register) is set to the address that I want to read, readRam() is called, and the data is sent to the MDE (Memory Address Register), the data is then sent to where it needs to go
+            (usually the accumulator).
+            <pre>
+                <code>
+def setMARtoOperand(self):
+    print("Setting MAR to CIR operand")
+    operand = self.CU.CIR % 100
+    self.CU.MAR = operand
+
+def readRam(self):
+    print("Reading RAM")
+    self.CU.MDR = self.RAM.getVal(self.CU.MAR)
+
+def copyMDRtoACC(self):
+    print("Copying contents of MDR to Accumulator")
+    self.ALU.ACC = self.CU.MDR
+                </code>
+            </pre>
+        </p>
+
+
+        <hr>
+        <footer>
+            <ul>
+                <li><a href="https://github.com/KennethOnGitHub" target="_blank">My Github</a> </li>
+            </ul>
+
+        </footer>
+    </body>
+</html>

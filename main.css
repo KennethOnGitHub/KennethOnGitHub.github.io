@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body {
+    /* background-color: #526863;
+    background-color: #314641; */
+    background-color: #203732;
+
+    color: #8f79a1;
+    font-family: "Archivo Black"
+}
+
+.title {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline;
+}
+
+.navbar a {
+    display:  inline-block;
+    padding: 0 4em;
+    color: white;
+}
+
+.navbar li:hover {
+    background-color: #526863
+}

@@ -14,4 +14,15 @@ function randomString() {
 
 function reloadString() {
     setInterval(randomString, 50);
+    changeName(0)
+}
+
+function changeName(nameIndex) { //this recursive approach will leak memory! I do not care tho! I checked and its abt 1mb every 30m!
+    const names = ["Kenneth Knight", "Ken Knight", "Kenny"];
+
+    nameIndex = nameIndex % names.length;
+
+    document.getElementById("name").innerHTML = names[nameIndex];
+
+    setTimeout(changeName, 900, nameIndex+1);
 }

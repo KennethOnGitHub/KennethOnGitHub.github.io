@@ -1,3 +1,5 @@
+
+
 function randomString() {
     const strLen = 100;
 
@@ -14,15 +16,18 @@ function randomString() {
 
 function reloadString() {
     setInterval(randomString, 50);
-    changeName(0)
+    loopNames();
 }
 
-function changeName(nameIndex) { //this recursive approach will leak memory! I do not care tho! I checked and its abt 1mb every 30m!
+function loopNames() {
     const names = ["Kenneth Knight", "Ken Knight", "Kenny"];
+    let nameIndex = 0;
 
-    nameIndex = nameIndex % names.length;
+    function changeName() {
+        document.getElementById("name").innerHTML = names[nameIndex];
+        nameIndex++;
+        nameIndex = nameIndex % names.length;
+    }
 
-    document.getElementById("name").innerHTML = names[nameIndex];
-
-    setTimeout(changeName, 900, nameIndex+1);
+    setInterval(changeName, 900);
 }

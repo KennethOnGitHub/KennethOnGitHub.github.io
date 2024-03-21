@@ -1,5 +1,3 @@
-
-
 function randomString() {
     const strLen = 100;
 

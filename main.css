@@ -1,13 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(fonts/fonts/webfonts/JetBrainsMono-Bold.woff2);
+}
+
 body {
     /* background-color: #526863;
     background-color: #314641; */
-    background-color: #203732;
+    /*background-color: #203732;*/
+    background-color: #362167;
 
-    color: #8f79a1;
-    font-family: "Archivo Black"
+    color: #00c109;
+    font-family: "JetBrainsMono"
 }
 
 .title {
@@ -38,4 +44,8 @@ body {
 
 .navbar li:hover {
     background-color: #526863
+}
+
+.changing-text-panel {
+    word-wrap: break-word;
 }

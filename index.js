@@ -1,11 +1,17 @@
 function randomString() {
-    const strLen = 100;
+    const strLen = 8_000;
 
     let output = "";
 
     for (let i = 0; i < strLen; i++) {
         let charCode = Math.floor(Math.random() * 26);
 
+        /*
+        if (i % 10 ==0) {
+            output += " "
+        }else {
+            output += String.fromCharCode(charCode + 65);
+        }*/
         output += String.fromCharCode(charCode + 65);
     }
 
@@ -14,6 +20,7 @@ function randomString() {
 
 function reloadString() {
     setInterval(randomString, 50);
+    //randomString();
     loopNames();
 }
 

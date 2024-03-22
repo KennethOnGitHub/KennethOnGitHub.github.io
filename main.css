@@ -13,39 +13,59 @@ body {
     background-color: #362167;
 
     color: #00c109;
-    font-family: "JetBrainsMono"
+    font-family: "JetBrainsMono";
+    font-size: medium;
 }
 
-.title {
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 0;
-}
+.title-box {
+    position: absolute;
+    text-align: left;
+    color: #FFFFFF;
+    
+    top: 0%;
+    left: 3%;
 
-.subtitle {
-    text-align: center;
-}
+    width: 75%;
 
-.navbar ul {
+    font-size: 8em;
     margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
-.navbar li{
-    display: inline;
-}
-
-.navbar a {
-    display:  inline-block;
-    padding: 0 4em;
-    color: white;
-}
-
-.navbar li:hover {
-    background-color: #526863
+.title-box h1 {
+    margin: 0;
+    color: #FFFFFF;
 }
 
 .changing-text-panel {
+    margin: 1%;
+    width: 80%;
     word-wrap: break-word;
+    font-size: xx-small;
+    float: left;
+
+    padding: 0.5em;
+    border-right: solid #00c109;
+}
+
+nav {
+    float: left;
+    color: #01D6D6;
+    font-size: large;
+}
+
+nav a {
+    color: #01D6D6;
+}
+
+footer {
+    float: right;
+    align-items: baseline;
+}
+
+.github-logo{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 3em;
+    height: 3em;
 }

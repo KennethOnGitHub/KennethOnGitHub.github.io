@@ -1,5 +1,5 @@
 function randomString() {
-    const strLen = 8_000;
+    const strLen = 20_000;
 
     let output = "";
 
@@ -25,7 +25,7 @@ function reloadString() {
 }
 
 function loopNames() {
-    const names = ["Kenneth Knight", "Ken Knight", "Kenny"];
+    const names = ["KENNETH KNIGHT", "KEN KNIGHT", "KENNY KNIGHT"];
     let nameIndex = 0;
 
     function changeName() {

@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>KennethOnTheNet</title>
-    </head>
-    <body style = "background-color: #eeeed2;">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">My Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <h1>
-            Contact me?
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KennyOnTheWeb!</title>
+    <link rel="stylesheet" href="main.css">
+    <script src = "index.js"></script>
+</head>
+<body onload="reloadString()">
+    <div class = "changing-text-panel">
+        <p id="changingText"></p>
+    </div>
+    <div class = "title-box">
+        <h1 class = "title" id = "name">
+            KENNY KNIGHT
         </h1>
+    </div>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <div class = "about-me">
+        <h4>
+            About me
+        </h4>
         <p>
-            no thank u :3
+            Hi I'm Kenny! :3
         </p>
+        <p>
+            I'm studying currently studying computer science and a lotta maths at college.
+        </p>
+        <p>
+            I work on quite a few programming projects in my free time, so I'd love it if you would check out my work :D
+        </p>
+    </div>
 
-        <hr>
-        <footer>
-            <ul>
-                <li><a href="https://github.com/KennethOnGitHub" target="_blank">My Github</a> </li>
-            </ul>
-
-        </footer>
-    </body>
+    <footer>
+        <a href="https://github.com/KennethOnGitHub" target="_blank"><img src = "images/icons8-github-96.png" alt = "My Github" class = "github-logo"></a>
+    </footer>
+</body>
 </html>

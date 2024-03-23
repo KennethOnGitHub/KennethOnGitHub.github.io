@@ -36,6 +36,15 @@ body {
     color: #FFFFFF;
 }
 
+@keyframes growFromLeft {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
 .changing-text-panel {
     margin: 1%;
     width: 80%;
@@ -46,6 +55,8 @@ body {
     float: left;
     color: #00c109;
 
+    animation: 1s ease-out 0s 1 growFromLeft;
+
     padding: 0.5em;
     border-right: solid #00c109;
 }
@@ -53,6 +64,10 @@ body {
 .changing-text-panel p {
     height: inherit;
     overflow: hidden;
+}
+
+.main-title-box {
+    
 }
 
 nav {

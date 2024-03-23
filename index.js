@@ -18,12 +18,6 @@ function randomiseBackgroundText() {
     document.getElementById("changingText").innerHTML = output;
 }
 
-function reloadString() {
-    setInterval(randomiseBackgroundText, 50);
-    //randomString();
-    loopNames();
-}
-
 function loopNames() {
     const names = ["KENNETH KNIGHT", "KEN KNIGHT", "KENNY KNIGHT"];
     let nameIndex = 0;
@@ -35,4 +29,10 @@ function loopNames() {
     }
 
     setInterval(changeName, 900);
+}
+
+function reloadString() { //rename this
+    setInterval(randomiseBackgroundText, 50);
+    //randomString();
+    loopNames();
 }

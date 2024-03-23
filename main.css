@@ -12,7 +12,7 @@ body {
     /*background-color: #203732;*/
     background-color: #362167;
 
-    color: #00c109;
+    color: white;
     font-family: "JetBrainsMono";
     font-size: medium;
 }
@@ -40,11 +40,19 @@ body {
     margin: 1%;
     width: 80%;
     word-wrap: break-word;
+    height: 92vh;
+    /* text-overflow: hidden; */
     font-size: xx-small;
     float: left;
+    color: #00c109;
 
     padding: 0.5em;
     border-right: solid #00c109;
+}
+
+.changing-text-panel p {
+    height: inherit;
+    overflow: hidden;
 }
 
 nav {
@@ -55,6 +63,11 @@ nav {
 
 nav a {
     color: #01D6D6;
+}
+
+.about-me {
+    float: left;
+    width: 15%;
 }
 
 footer {

@@ -1,5 +1,5 @@
-function randomString() {
-    const strLen = 20_000;
+function randomiseBackgroundText() {
+    const strLen = 21_000;
 
     let output = "";
 
@@ -19,7 +19,7 @@ function randomString() {
 }
 
 function reloadString() {
-    setInterval(randomString, 50);
+    setInterval(randomiseBackgroundText, 50);
     //randomString();
     loopNames();
 }

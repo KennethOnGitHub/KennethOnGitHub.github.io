@@ -1,0 +1,14 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url("/fonts/JetBrainsMono[wght].ttf");
+}
+
+* {
+    font-family: JetBrainsMono;
+    color: white;
+    color-scheme: dark;
+}
+
+body {
+    background-color: #292929;
+}

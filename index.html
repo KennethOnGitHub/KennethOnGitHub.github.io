@@ -1,55 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KennyOnTheWeb!</title>
-    <link rel="stylesheet" href="main.css">
-    <script src = "index.js"></script>
-</head>
-<body onload="reloadString()">
-    <div class = "changing-text-panel">
-        <p id="changingText"></p>
-    </div>
-    <div class = "title-box">
-        <h1 class = "title" id = "name">
-            KENNY KNIGHT
-        </h1>
-    </div>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/styles.Dsqpg40J.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.D70X5pOY.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DT3M59TF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.-vM-VkYC.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Cv2zyRbU.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BTa8UwvG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.D6kgxu3v.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CA4fKzjw.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CUUt--m4.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.YpFtD9eS.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="page svelte-15yipsc"><div class="container svelte-15yipsc"><h1 class="svelte-15yipsc" data-svelte-h="svelte-vkyk6b">Ken Knight</h1> <nav class="svelte-15yipsc" data-svelte-h="svelte-1chtskr"><ul class="svelte-15yipsc"><li class="svelte-15yipsc"><a href="#" class="svelte-15yipsc">About Me</a></li> <li class="svelte-15yipsc"><a href="#" class="svelte-15yipsc">Projects</a></li> <li class="svelte-15yipsc"><a href="/blog" class="svelte-15yipsc">Blog</a></li> <li class="svelte-15yipsc"><a href="/contact" class="svelte-15yipsc">Contact</a></li> <li class="svelte-15yipsc"><a href="#" class="svelte-15yipsc">My Fashion Sense</a></li></ul></nav> <div class="right svelte-15yipsc"><p class="svelte-15yipsc">I’m a 17.125949858 year-old aspiring software developer studying Further Maths and Computer Science at Bexhill College.</p> <p class="svelte-15yipsc" data-svelte-h="svelte-1yakjid">Keep it clean, efficient, and a little silly.</p></div></div></div> <footer class="svelte-15yipsc" data-svelte-h="svelte-13chiae"><a href="https://youtube.com/" class="svelte-15yipsc">CV</a> <a href="https://youtube.com/" class="svelte-15yipsc"><img src="/youtube.png" alt="Youtube" class="svelte-15yipsc"></a> <a href="https://github.com/" class="svelte-15yipsc"><img src="/github.png" alt="GitHub" class="svelte-15yipsc"></a> </footer> 
+			
+			<script>
+				{
+					__sveltekit_1o41yu1 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
 
-    
-    <div class = "about-me">
-        <h4>
-            About me
-        </h4>
-        <p>
-            Hi I'm Kenny! :3
-        </p>
-        <p>
-            I'm studying currently studying computer science and a lotta maths at college.
-        </p>
-        <p>
-            I work on quite a few programming projects in my free time, so I'd love it if you would check out my work :D
-        </p>
-    </div>
+					const element = document.currentScript.parentElement;
 
-    <footer>
-        <a href="https://github.com/KennethOnGitHub" target="_blank"><img src = "images/icons8-github-96.png" alt = "My Github" class = "github-logo"></a>
-    </footer>
-</body>
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DT3M59TF.js"),
+						import("./_app/immutable/entry/app.BTa8UwvG.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
-

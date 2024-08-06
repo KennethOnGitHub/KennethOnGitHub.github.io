@@ -4,6 +4,7 @@
 
     //get the top posts
     //
+    export let data;
 
 </script>
 
@@ -11,16 +12,15 @@
     <Header currentPage = "Blog"/>
 
     <div class = "content">
-        <!-- <div class = "highlighted-post">
 
-        </div>
-        <div class = "posts">
-
-        </div>
- -->
-
-    <a href="./blog/beemovie">Go to BEE NMIVUE</a>
-
+        <ul>
+            {#each data.posts as post}
+            <li>
+                <a href={"/blog/" + post.slug}>{post.title}</a>
+            </li>
+            <hr>
+            {/each}
+        </ul>
     </div>
 
 </div>
@@ -33,8 +33,12 @@
 
 }
 a {
-    position: relative;
-    top: 100px;
+    text-decoration: none;
     z-index: 99;
+}
+ul {
+    padding: 0;
+    /* ^^maybe the 0 padding hsould be added to css reset? */
+    list-style: none;
 }
 </style>

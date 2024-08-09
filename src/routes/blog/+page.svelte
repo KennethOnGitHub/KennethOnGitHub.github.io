@@ -16,7 +16,10 @@
         <ul>
             {#each data.posts as post}
             <li>
+                <time datetime={post.date}>{post.date}</time><br>
+                
                 <a href={"/blog/" + post.slug}>{post.title}</a>
+                <p>{post.preview}</p>
             </li>
             <hr>
             {/each}
@@ -32,13 +35,27 @@
     background-color: #292929;
 
 }
+
+time {
+    opacity: 50%;
+}
+
 a {
     text-decoration: none;
-    z-index: 99;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 ul {
     padding: 0;
     /* ^^maybe the 0 padding hsould be added to css reset? */
     list-style: none;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+.content {
+    padding: 2em;
 }
 </style>

@@ -6,6 +6,7 @@
     //
     export let data;
 
+    console.log(data.posts)
 </script>
 
 <div class = "page">
@@ -16,10 +17,17 @@
         <ul>
             {#each data.posts as post}
             <li>
-                <time datetime={post.date}>{post.date}</time><br>
-                
-                <a href={"/blog/" + post.slug}>{post.title}</a>
-                <p>{post.preview}</p>
+                <a href={`/blog/${post.slug}`}>
+                    {#if post.thumbnail != undefined}
+                        <img src={`/${post.thumbnail}`} alt={post.title} class = "thumbnail">
+                    {/if}
+                    <div>
+                        <time datetime={post.date}>{post.date}</time><br>
+                    
+                        <h1>{post.title}</h1>
+                        <p>{post.preview}</p>
+                    </div>
+                </a>
             </li>
             <hr>
             {/each}
@@ -42,18 +50,30 @@ time {
 
 a {
     text-decoration: none;
-    font-size: xx-large;
-    font-weight: bolder;
+    display: flex;
+    border-radius: 7px;
+    transition: background-color 100ms;
 }
+
+/* a:hover {
+    background-color: #ffffff35;
+} */
+
 ul {
     padding: 0;
     /* ^^maybe the 0 padding hsould be added to css reset? */
     list-style: none;
 }
 
+.thumbnail {
+    height: 150px;
+}
+
 hr {
     margin: 1em 0;
 }
+
+
 
 .content {
     padding: 2em;

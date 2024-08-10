@@ -4,8 +4,7 @@ async function getPosts() {
     let posts = [];
 
     const postFiles = import.meta.glob('/src/routes/blog/*.md', {eager: true}) //returns an object whose keys are the paths and the corresponding pair the the data from its import.
-    // console.log(postFiles);
-    console.log(postFiles['/src/routes/blog/beemovie.md'].default)
+
 
     for (const path in postFiles) {
         const file = postFiles[path];

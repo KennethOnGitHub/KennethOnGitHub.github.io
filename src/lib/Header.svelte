@@ -32,7 +32,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #0E6363;
+        /* background-color: #0E6363; */
+        background-image: linear-gradient(0.25turn, #52296A, #0E6363);
         color: white;
         height: 60px;
 

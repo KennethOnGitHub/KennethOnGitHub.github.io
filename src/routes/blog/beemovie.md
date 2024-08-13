@@ -31,3 +31,7 @@ overflow test
 ![test image](/Warren-Buffet.jpg 'Warren Buffet')
 
 <img src="/Warren-Buffet.jpg" width="200" height="100">
+
+TEST LaTeX
+$x^2 + 4$
+$$\frac{x^2 + 4x + 3}{x - 2}$$

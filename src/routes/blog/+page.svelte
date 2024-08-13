@@ -79,7 +79,7 @@ ul {
 }
 
 .thumbnail {
-    height: 200px;
+    height: 170px;
     aspect-ratio: 10/7;
     object-fit: cover;
     border-radius: 10px;

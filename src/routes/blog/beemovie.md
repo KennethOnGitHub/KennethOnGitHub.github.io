@@ -27,3 +27,7 @@ while true:
 overflow test
 overflow test
 overflow test
+
+![test image](/Warren-Buffet.jpg 'Warren Buffet')
+
+<img src="/Warren-Buffet.jpg" width="200" height="100">

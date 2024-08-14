@@ -3,12 +3,13 @@
     src: url("/fonts/JetBrainsMono[wght].ttf");
 }
 
-* {
+body {
     font-family: JetBrainsMono;
     color: white;
     color-scheme: dark;
-}
-
-body {
     background-color: #292929;
 }
+/* 
+body {
+    background-color: #292929;
+} */

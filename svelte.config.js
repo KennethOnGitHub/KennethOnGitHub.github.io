@@ -6,6 +6,7 @@ import { mdsvex } from 'mdsvex'
 import rehypeKatexSvelte from 'rehype-katex-svelte';
 import remarkMath from 'remark-math'; 
 import remarkBreaks from 'remark-breaks'; //This adds a linebreak when have an 'enter' in the markdown file
+import rehypeExternalLinks from 'rehype-external-links'
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -28,6 +29,10 @@ const config = {
 				[
 					rehypeKatexSvelte,
 					{output: 'mathml'} //without this, both HTML and mathml are rendered, which isn't good. I picked mathml because A: the blog post i read picked it and B: in my own testing html doesn't render nicely
+				],
+				[
+					rehypeExternalLinks,
+					{target: '_blank'}
 				]
 			]
 		})

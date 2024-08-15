@@ -6,7 +6,8 @@ import { mdsvex } from 'mdsvex'
 import rehypeKatexSvelte from 'rehype-katex-svelte';
 import remarkMath from 'remark-math'; 
 import remarkBreaks from 'remark-breaks'; //This adds a linebreak when have an 'enter' in the markdown file
-import rehypeExternalLinks from 'rehype-external-links'
+import rehypeExternalLinks from 'rehype-external-links' //Lets us adjust links
+import remarkGfm from 'remark-gfm'; //This adds in Github Flavoured Markdown which adds in tables
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -24,7 +25,7 @@ const config = {
 		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
-			remarkPlugins: [remarkMath, remarkBreaks],
+			remarkPlugins: [remarkMath, remarkBreaks, remarkGfm],
 			rehypePlugins: [
 				[
 					rehypeKatexSvelte,

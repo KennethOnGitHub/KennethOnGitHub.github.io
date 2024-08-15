@@ -38,3 +38,17 @@ $$\frac{x^2 + 4x + 3}{x - 2}$$
 
 linebreak test  
 newline?
+
+table test:
+
+| foo | bar |
+| --- | --- |
+| baz | bim |
+
+table (right element center aligned)
+
+| foo | bar |
+| --- | :-: |
+| baz | bim |
+
+autolink test: www.google.com

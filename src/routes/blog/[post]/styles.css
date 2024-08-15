@@ -7,3 +7,8 @@
     color: #447ff5;
     text-decoration: underline;
 }
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse
+}

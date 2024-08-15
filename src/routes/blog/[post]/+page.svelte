@@ -3,6 +3,7 @@
 	export let data;
 
 	import Header from '$lib/Header.svelte';
+	import './styles.css'
 
 	function formatDate(inputDate) {
 		//InputDate should be in form YYYY-MM-DD

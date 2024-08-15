@@ -20,7 +20,8 @@ Chess is a game where the number of possible positions grows incredibly fast the
 When looking at a chess position, there are two things we looked at, **material advantage** (how much more value in terms of pieces one side has) and **positional advantage** (how much better these pieces are placed).
 
 #### Material Advantage
-Finding material advantage can be done incredibly simply by adding the total value of the pieces one side has and subtracting the value of the other side to get a numeric value. For example, if white has a queen and a rook whilst black has a queen and a knight, the material advantage for white would be: $$(\text{QUEEN VALUE} + \text{ROOK VALUE} - \text{QUEEN VALUE} - \text{KNIGHT VALUE})$$In the real world, the value of a type of piece isn't static and changes as the game develops (e.g. a cluttered board benefits a knight, whilst an open board benefits a bishop), however, for the sake of simplicity manually setting the value of pieces is sufficient. For our bot, we used the following values:
+Finding material advantage can be done incredibly simply by adding the total value of the pieces one side has and subtracting the value of the other side to get a numeric value. For example, if white has a queen and a rook whilst black has a queen and a knight, the material advantage for white would be: $$(\text{QUEEN VALUE} + \text{ROOK VALUE} - \text{QUEEN VALUE} - \text{KNIGHT VALUE})$$
+In the real world, the value of a type of piece isn't static and changes as the game develops (e.g. a cluttered board benefits a knight, whilst an open board benefits a bishop), however, for the sake of simplicity manually setting the value of pieces is sufficient. For our bot, we used the following values:
 | Pawn | Knight | Bishop | Rook | Queen |
 |--|--|--|--|--|
 | 100 | 100 | 300 | 500 | 900 | 

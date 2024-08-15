@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"rehype-katex-svelte": "^1.2.0"
+		"rehype-katex-svelte": "^1.2.0",
+		"remark-breaks": "^4.0.0"
 	}
 }

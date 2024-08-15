@@ -2,8 +2,10 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex'
 
+//Markdown Rendering
 import rehypeKatexSvelte from 'rehype-katex-svelte';
-import remarkMath from 'remark-math';
+import remarkMath from 'remark-math'; 
+import remarkBreaks from 'remark-breaks'; //This adds a linebreak when have an 'enter' in the markdown file
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -21,7 +23,7 @@ const config = {
 		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
-			remarkPlugins: [remarkMath],
+			remarkPlugins: [remarkMath, remarkBreaks],
 			rehypePlugins: [
 				[
 					rehypeKatexSvelte,

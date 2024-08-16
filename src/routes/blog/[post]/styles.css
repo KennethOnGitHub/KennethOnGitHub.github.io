@@ -12,3 +12,7 @@ table, th, td {
     border: 1px solid white;
     border-collapse: collapse
 }
+
+pre[class*="language-"] { /*Selects the pre of code blocks as all code blocks have the substring language-*/
+    border-radius: 4px;
+}

@@ -5,6 +5,8 @@
 	import Header from '$lib/Header.svelte';
 	import './styles.css'
 
+	import './prism-night-owl.css'
+
 	function formatDate(inputDate) {
 		//InputDate should be in form YYYY-MM-DD
 		//Returns date in format DD (Month Written Out) YYYY

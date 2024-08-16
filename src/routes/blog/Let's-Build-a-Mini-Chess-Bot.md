@@ -29,7 +29,7 @@ In the real world, the value of a type of piece isn't static and changes as the 
 
 #### Positional Advantage
 Calculating the how well pieces are placed is a greater challenge, there are innumerable factors to consider (how central a piece is, whether or not it is blocked in by other pieces, whether the structure of the pawns is good, etc...) which I implore those who are interested in Chess Programming to look into, however, we have found that using a piece-square table yields excellent results for the amount of code required and is far more than sufficient on its own. A piece-square table, simply put, is an array of integers where each value in the array corresponds to the value of having a particular piece on that square (See one table we got from [PeSTO](https://www.chessprogramming.org/PeSTO%27s_Evaluation_Function) that we used for our project below)
-```C#
+```Csharp
 int midgame_queen_table[64] = {
     -28,   0,  29,  12,  59,  44,  43,  45,
     -24, -39,  -5,   1, -16,  57,  28,  54,

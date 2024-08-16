@@ -7,7 +7,7 @@ thumbnail: Warren-Buffet.jpg
 
 ## Intro
 Back in late 2023, I and a friend took part in [Sebastian Lague's Chess Coding Challenge](https://github.com/SebLague/Chess-Challenge), a competition where chess bots whose code was under 1024 tokens would duke it out for the 2 best rewards known to man, bragging rights and having your name possibly mentioned by a somewhat large internet celebrity.
-Programming with such constraints and a focus a focus on performance means that the code will be **evil**, we are sacrificing readability and extensibility for the sake of making the code shorter and faster, which for most real world applications is a terrible idea. Computers are so fast that making very performant code usually isn't particularly important and making code shorter for the sake of shortness is just pointless.
+Programming with such constraints and a focus a focus on performance means that the code will be **evil**, we are sacrificing readability and extensibility for the sake of making the code shorter and faster, which for most real world applications is a terrible idea. Making code shorter for the sake of shortness is just pointless and computers are so fast that making very performant code usually isn't particularly important.
 This was my first foray into C#, working collaboratively on code, and chess bots, so the following is by no means perfect, but should give you a good sense of where to start with your own chess bot and the big mistakes I made.
 [[View our bot here]](https://github.com/KennethOnGitHub/KnightToE4F)
 
@@ -21,7 +21,7 @@ When looking at a chess position, there are two things we looked at, **material 
 
 #### Material Advantage
 Finding material advantage can be done incredibly simply by adding the total value of the pieces one side has and subtracting the value of the other side to get a numeric value. For example, if white has a queen and a rook whilst black has a queen and a knight, the material advantage for white would be: $$(\text{QUEEN VALUE} + \text{ROOK VALUE} - \text{QUEEN VALUE} - \text{KNIGHT VALUE})$$
-In the real world, the value of a type of piece isn't static and changes as the game develops (e.g. a cluttered board benefits a knight, whilst an open board benefits a bishop), however, for the sake of simplicity manually setting the value of pieces is sufficient. For our bot, we used the following values:
+In the real world, the value of a type of piece isn't static and changes as the game develops (e.g. a cluttered board benefits a knight, whilst an open board benefits a bishop), however, for the sake of simplicity manually setting static values for pieces is sufficient. For our bot, we used the following values:
 
 | Pawn | Knight | Bishop | Rook | Queen |
 | :--: | :----: | :----: | :--: | :---: |
